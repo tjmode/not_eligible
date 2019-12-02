@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form action="/workingarea" method="post">
+{%for i in range(lenval) %}
+<h1>{{ lsq[i] }}</h1>
+<h1>options{{i}}</h1>
+<input type="radio" name="options{{i}}" id="option1" value="a">{{lsa[i]}}</input><br>
+<input type="radio" name="options{{i}}" id="option2" value="b">{{lsb[i]}}</input><br>
+<input type="radio" name="options{{i}}" id="option3" value="c">{{lsc[i]}}</input><br>
+<input type="radio" name="options{{i}}" id="option3" value="d">{{lsd[i]}}</input><br>
+{% endfor %}	
+<button>submit</button>
+
+</body>
+</html>
